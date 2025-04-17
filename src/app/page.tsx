@@ -22,15 +22,17 @@ import {
 import { Dock } from "./components/ui/dock";
 import { Nav } from "./components/navbar";
 import { useState } from "react";
+import { WobbleCards } from "./components/wobblecards";
+import { Footer } from "./components/footer";
 export default function Home() {
   const navItems = [
       {
-        name: "Features",
-        link: "#features",
+        name: "About",
+        link: "#about",
       },
       {
-        name: "Pricing",
-        link: "#pricing",
+        name: "Features",
+        link: "#features",
       },
       {
         name: "Contact",
@@ -40,15 +42,15 @@ export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="">
+    <div className="bg-transparent">
       <Navbar>
         {/* Desktop Navigation */}
         <NavBody>
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            <NavbarButton variant="secondary">Login</NavbarButton>
-            <NavbarButton variant="primary">Book a call</NavbarButton>
+            {/* <NavbarButton variant="secondary">Login</NavbarButton> */}
+            <NavbarButton variant="primary">Download</NavbarButton>
           </div>
         </NavBody>
 
@@ -94,11 +96,11 @@ export default function Home() {
             </div>
           </MobileNavMenu>
         </MobileNav>
-      </Navbar>
-      
+      </Navbar> 
       <HomeBackground/>
-
+      <WobbleCards/>
       <DummyContent/>
+      <Footer/>
     </div>
   );
 }

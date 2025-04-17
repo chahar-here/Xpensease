@@ -23,8 +23,8 @@ export function Nav() {
       link: "#pricing",
     },
     {
-      name: "Contact",
-      link: "#contact",
+      name: "Tools",
+      link: "contactus",
     },
   ];
 

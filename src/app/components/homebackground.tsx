@@ -1,13 +1,9 @@
 "use client";
 import React from "react";
 import { BackgroundBeams } from "./ui/background-beams";
-import Image from "next/image";
-import { TextHover } from "./texthover";
-import Link from "next/link";
-
 export function HomeBackground() {
   return (
-    <div className="h-[50rem] bg-transparent w-full rounded-md relative flex flex-col items-center justify-center antialiased font-serif py-20 pt-50 px-6 md:px-12 lg:px-24">
+    <div className="h-[50rem] bg-transparent w-full rounded-md relative flex flex-col items-center justify-center antialiased font-serif py-20 pt-24 px-6 md:px-12 lg:px-24">
       <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-10">
         {/* Left: Text Content */}
         <div className="flex-1 text-center lg:text-left">
