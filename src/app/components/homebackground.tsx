@@ -2,28 +2,41 @@
 import React from "react";
 import { BackgroundBeams } from "./ui/background-beams";
 import Image from "next/image";
+import { TextHover } from "./texthover";
+import Link from "next/link";
 
 export function HomeBackground() {
   return (
-    <div className="h-[40rem] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased">
-      <div className="max-w-2xl mx-auto p-4">
-        <div className=" flex justify-center">
-          <Image src='/xpensease_1.png' width={250} height={250} alt=""/>
+    <div className="h-[50rem] bg-transparent w-full rounded-md relative flex flex-col items-center justify-center antialiased font-serif py-20 pt-50 px-6 md:px-12 lg:px-24">
+      <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-10">
+        {/* Left: Text Content */}
+        <div className="flex-1 text-center lg:text-left">
+          <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">
+            Track All Your Expenses.<br />
+            <span className="text-indigo-500">Smarter. Simpler.</span>
+          </h1>
+          <p className="mt-6 text-lg text-gray-300 max-w-xl">
+            Xpensease connects your UPI, credit card, and bank transactions to give you real-time insights and full control over your spending.
+          </p>
+
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <a
+              href="https://play.google.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 border border-gray-700 text-gray-200 hover:bg-gray-800 rounded-md text-lg font-medium transition"
+            >
+              Download App
+            </a>
+          </div>
         </div>
-        <br/>
-        <p className="text-neutral-500 max-w-lg mx-auto my-2 text-sm text-center relative z-10">
-          Here will be your Text & Description.
-          Welcome to MailJet, the best transactional email service on the web.
-          We provide reliable, scalable, and customizable email solutions for
-          your business. Whether you&apos;re sending order confirmations,
-          password reset emails, or promotional campaigns, MailJet has got you
-          covered.
-        </p>
-        <input
-          type="text"
-          placeholder="hi@manuarora.in"
-          className="rounded-lg border border-neutral-800 focus:ring-2 focus:ring-teal-500  w-full relative z-10 mt-4  bg-neutral-950 placeholder:text-neutral-700"
-        />
+
+        {/* Right: Image */}
+        <div className="flex-1">
+        <video
+        src="/homepage_14Nov24.mp4" autoPlay loop muted playsInline
+        className="rounded-xl shadow-lg w-full max-w-[400px] h-auto z-50" />
+        </div>
       </div>
       <BackgroundBeams />
     </div>
