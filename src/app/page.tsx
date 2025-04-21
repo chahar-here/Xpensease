@@ -24,6 +24,8 @@ import { Nav } from "./components/navbar";
 import { useState } from "react";
 import { WobbleCards } from "./components/wobblecards";
 import { Footer } from "./components/footer";
+import Highlights from "./components/Highlights/highlights";
+import FeaturesTab from "./components/FeaturesTab";
 export default function Home() {
   const navItems = [
       {
@@ -98,8 +100,10 @@ export default function Home() {
         </MobileNav>
       </Navbar> 
       <HomeBackground/>
+      <FeaturesTab/>
       <WobbleCards/>
-      <DummyContent/>
+      <Highlights/>
+      {/* <DummyContent/> */}
       <Footer/>
     </div>
   );
