@@ -1,110 +1,20 @@
-"use client";
-import {
-  Navbar,
-  NavBody,
-  NavItems,
-  MobileNav,
-  NavbarLogo,
-  NavbarButton,
-  MobileNavHeader,
-  MobileNavToggle,
-  MobileNavMenu,
-} from "./components/ui/resizable-navbar";
-import { HomeBackground } from "./components/homebackground";
-import {
-  IconBrandGithub,
-  IconBrandX,
-  IconExchange,
-  IconHome,
-  IconNewSection,
-  IconTerminal2,
-} from "@tabler/icons-react";
-import { Dock } from "./components/ui/dock";
-import { Nav } from "./components/navbar";
-import { useState } from "react";
-import { WobbleCards } from "./components/wobblecards";
-import { Footer } from "./components/footer";
-import Highlights from "./components/Highlights/highlights";
-import FeaturesTab from "./components/FeaturesTab";
+import { HomeBackground } from "../components/homebackground";
+import { WobbleCards } from "../components/wobblecards";
+import Highlights from "../components/Highlights/highlights";
+import FeaturesTab from "../components/FeaturesTab";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Xpensease",
+  description: "Track your expenses with ease",
+};
 export default function Home() {
-  const navItems = [
-      {
-        name: "About",
-        link: "#about",
-      },
-      {
-        name: "Features",
-        link: "#features",
-      },
-      {
-        name: "Contact",
-        link: "#contact",
-      },
-    ];
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
   return (
     <div className="bg-transparent">
-      <Navbar>
-        {/* Desktop Navigation */}
-        <NavBody>
-          <NavbarLogo />
-          <NavItems items={navItems} />
-          <div className="flex items-center gap-4">
-            {/* <NavbarButton variant="secondary">Login</NavbarButton> */}
-            <NavbarButton variant="primary">Download</NavbarButton>
-          </div>
-        </NavBody>
-
-        {/* Mobile Navigation */}
-        <MobileNav>
-          <MobileNavHeader>
-            <NavbarLogo />
-            <MobileNavToggle
-              isOpen={isMobileMenuOpen}
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            />
-          </MobileNavHeader>
-
-          <MobileNavMenu
-            isOpen={isMobileMenuOpen}
-            onClose={() => setIsMobileMenuOpen(false)}
-          >
-            {navItems.map((item, idx) => (
-              <a
-                key={`mobile-link-${idx}`}
-                href={item.link}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className="relative text-neutral-600 dark:text-neutral-300"
-              >
-                <span className="block">{item.name}</span>
-              </a>
-            ))}
-            <div className="flex w-full flex-col gap-4">
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Login
-              </NavbarButton>
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Book a call
-              </NavbarButton>
-            </div>
-          </MobileNavMenu>
-        </MobileNav>
-      </Navbar> 
       <HomeBackground/>
       <FeaturesTab/>
       <WobbleCards/>
       <Highlights/>
       {/* <DummyContent/> */}
-      <Footer/>
     </div>
   );
 }
