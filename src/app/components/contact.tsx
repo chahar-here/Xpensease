@@ -3,13 +3,7 @@ import React from "react";
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import { cn } from "../lib/utils";
-import {
-  IconBrandGithub,
-  IconBrandGoogle,
-  IconBrandOnlyfans,
-} from "@tabler/icons-react";
-
-export function Contactus() {
+export function Contact() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form submitted");

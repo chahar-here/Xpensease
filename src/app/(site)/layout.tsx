@@ -41,7 +41,7 @@ export default function RootLayout({
         },
         {
           name: "Contact",
-          link: "/contact",
+          link: "/contactus",
         },
       ];
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -51,6 +51,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <div className="p-4">
         <Navbar>
         {/* Desktop Navigation */}
         <NavBody>
@@ -107,6 +108,7 @@ export default function RootLayout({
       </Navbar> 
         {children}
         <Footer/>
+        </div>
       </body>
     </html>
   );
