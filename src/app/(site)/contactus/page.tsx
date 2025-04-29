@@ -2,7 +2,7 @@
 import { Contact } from "@/app/components/contact";
 export default function Contactus() {
   return (
-    <div className="bg-neutral-950 flex h-screen
+    <div className="bg-neutral-950 flex h-[700px]
     w-[100%]">
       <div className=" w-full h-screen flex items-center justify-center">
         <Contact/>

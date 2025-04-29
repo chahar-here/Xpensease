@@ -1,40 +1,67 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import { cn } from "../lib/utils";
 export function Contact() {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const[fullName, setFullName] = useState('');
+  const[email, setEmail] = useState('');
+  const[message, setMessage] = useState('');
+  const [error, setError] = useState([]);
+  const [success, setSuccess] = useState(false);
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("Form submitted");
+    console.log("Full Name :", fullName);
+    console.log("Email :", email);
+    console.log("Message :", message);
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({
+        fullName,
+        email,
+        message,
+      }),
+    });
+    const { msg, success } = await res.json();
+    setError(msg);
+    setSuccess(success);
+
+    if (success) {
+      setFullName("");
+      setEmail("");
+      setMessage("");
+    }
   };
   return (
     <div className="shadow-input mx-auto w-full max-w-md rounded-none bg-white p-4 md:rounded-2xl md:p-8 dark:bg-black">
+      {/* Headings */}
       <h2 className="text-xl font-bold text-neutral-800 dark:text-neutral-200 text-center">
         Welcome to Xpensease
       </h2>
       <p className="mt-2 max-w-sm text-sm text-neutral-600 dark:text-neutral-300 text-center">
         Ask your question here!
       </p>
-
+      {/* Form */}
       <form className="my-8" onSubmit={handleSubmit}>
+        {/* Names */}
         <div className="mb-4 flex flex-col space-y-2 md:flex-row md:space-y-0 md:space-x-2">
           <LabelInputContainer>
-            <Label htmlFor="firstname">First name</Label>
-            <Input id="firstname" placeholder="Tyler" type="text" />
-          </LabelInputContainer>
-          <LabelInputContainer>
-            <Label htmlFor="lastname">Last name</Label>
-            <Input id="lastname" placeholder="Durden" type="text" />
+            <Label htmlFor="firstname">Full name</Label>
+            <Input id="firstname" onChange={(e) => setFullName(e.target.value)} value={fullName} placeholder="Tyler" type="text" />
           </LabelInputContainer>
         </div>
+        {/* Email */}
         <LabelInputContainer className="mb-4">
           <Label htmlFor="email">Email Address</Label>
-          <Input id="email" placeholder="projectmayhem@fc.com" type="email" />
+          <Input id="email" onChange={(e) => setEmail(e.target.value)} value={email}  placeholder="projectmayhem@fc.com" type="email" />
         </LabelInputContainer>
+        {/* Message */}
         <LabelInputContainer className="mb-4">
           <Label htmlFor="password">Message!</Label>
-          <Input id="password" placeholder="Type Here!" type="text" />
+          <Input id="password" onChange={(e) => setMessage(e.target.value)} value={message} placeholder="Type Here!" type="text" />
         </LabelInputContainer>
         {/* Contact Us Button */}
         <button
@@ -49,7 +76,7 @@ export function Contact() {
       </form>
     </div>
   );
-}
+};
 
 const BottomGradient = () => {
   return (
