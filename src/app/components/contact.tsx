@@ -9,12 +9,12 @@ export function Contact() {
   const[message, setMessage] = useState('');
   const [error, setError] = useState([]);
   const [success, setSuccess] = useState(false);
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Full Name :", fullName);
     console.log("Email :", email);
     console.log("Message :", message);
-    const res = await fetch("/api/contact", {
+    const res = await fetch('/api/contact', {
       method: "POST",
       headers: {
         "Content-type": "application/json",

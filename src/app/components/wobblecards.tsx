@@ -18,39 +18,30 @@ export function WobbleCards() {
       <WobbleCard containerClassName="col-span-1 lg:col-span-2 h-full bg-pink-800 min-h-[500px] lg:min-h-[300px]"
         className=""
       >
-        <div className="max-w-xs">
+        <div className="max-w-sm">
           <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-          Real-Time Tracking:
+          Automatic Expense Tracker:
           </h2>
           <p className="mt-4 text-left  text-base/6 text-neutral-200">
-          All your UPI, cards, and bank expenses in one place.
+          Track your spending effortlessly Automatically tracks expenses from UPI, credit/debit cards, and bank transactions, with categorized insights and detailed filters.
           </p>
         </div>
-        <img
-          src="/linear.webp"
-          width={500}
-          height={500}
-          alt="linear demo image"
-          className="absolute -right-4 lg:-right-[40%] grayscale filter -bottom-10 object-contain rounded-2xl"
-        />
       </WobbleCard>
       <WobbleCard containerClassName="col-span-1 min-h-[300px]">
         <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-        Smart Categorization:
+        Single Split System:
         </h2>
         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-          Automated expense grouping by type (food, shopping, bills, etc).
+        Quickly split expenses with contacts Select a transaction and your contacts, and instantly generate a split summary to share with ease
         </p>
       </WobbleCard>
       <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]">
-        <div className="max-w-sm">
+        <div className="max-w-lg">
           <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-            Signup for blazing-fast cutting-edge state of the art Gippity AI
-            wrapper today!
+          Group Splits and Roomies Feature:
           </h2>
-          <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-            With over 100,000 mothly active bot users, Gippity AI is the most
-            popular AI platform for developers.
+          <p className="mt-4 max-w-md text-left  text-base/6 text-neutral-200">
+          Manage group and roommate expenses seamlessly Create groups, add members, and share UPI details for quick settlements, with monthly summaries and PDF reports for roommates.
           </p>
         </div>
         <img
@@ -91,26 +82,26 @@ export function WobbleCards() {
       </WobbleCard> */}
       <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-pink-800">
         <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-        Split Expenses:
+        Budget Management System:
         </h2>
         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-        Seamless sharing with friends and family.
+        Take control of your finances Set budgets, track progress, and manage all your expenses in one place, ensuring you stay within your financial limits.
         </p>
       </WobbleCard>
       <WobbleCard containerClassName="col-span-1 min-h-[300px] bg-blue-900">
         <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-        Visual Dashboards:
+        PayAlert by Xpensease:
         </h2>
         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-        Clean insights with graphs and charts.
+        Stay on top of money owed or received Set custom alerts for reminders about money you’ve given or owe, with dates and automatic tracking for timely settlements.
         </p>
       </WobbleCard>
       <WobbleCard containerClassName="col-span-1 min-h-[300px]">
         <h2 className="max-w-80  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-        Privacy First:
+        CashWise:
         </h2>
         <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
-        Bank-level security to protect your data.
+        Track your cash transactions effortlessly Manually log cash expenses, categorize them, and analyze your finances with insightful monthly income and expense dashboards.
         </p>
       </WobbleCard>
     </div>

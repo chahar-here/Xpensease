@@ -12,15 +12,15 @@ export function HomeBackground() {
             <span className="text-indigo-500">Smarter. Simpler.</span>
           </h1>
           <p className="mt-6 text-lg text-gray-300 max-w-xl">
-            Xpensease connects your UPI, credit card, and bank transactions to give you real-time insights and full control over your spending.
+          Xpensease is a smart automatic expense tracking app that helps users manage, split, and settle personal and group expenses with ease. From reminders to real-time dashboards, Xpensease simplifies money matters in everyday life.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a
-              href="https://play.google.com"
+              href="https://play.google.com/store/apps/details?id=com.Xpensease.xpensease"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-6 py-3 border border-gray-700 text-gray-200 hover:bg-gray-800 rounded-md text-lg font-medium transition"
+              className="px-6 py-3 border border-gray-700 text-gray-200 hover:bg-gray-800 rounded-md text-lg font-medium transition z-40"
             >
               Download App
             </a>

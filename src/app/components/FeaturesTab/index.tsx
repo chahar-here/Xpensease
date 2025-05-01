@@ -9,17 +9,17 @@ const tabList = [
   {
     id: "tabOne",
     number: "01",
-    title: "Clean User Interface",
+    title: "Automatic Expense Tracking",
   },
   {
     id: "tabTwo",
     number: "02",
-    title: "Essential Business Pages",
+    title: "Xpensease Split Modes",
   },
   {
     id: "tabThree",
     number: "03",
-    title: "Fully Functional Integrations",
+    title: "PayAlert & CashWise",
   },
 ];
 
