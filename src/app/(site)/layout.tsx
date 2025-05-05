@@ -59,7 +59,7 @@ export default function RootLayout({
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
             {/* <NavbarButton variant="secondary">Login</NavbarButton> */}
-            <NavbarButton variant="primary">Download</NavbarButton>
+            <NavbarButton variant="primary" href="https://play.google.com/store/apps/details?id=com.Xpensease.xpensease" target="_blank">Download</NavbarButton>
           </div>
         </NavBody>
 
