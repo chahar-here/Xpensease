@@ -57,7 +57,7 @@ export function Footer(){
                     <IconBrandX/>
                   </a>
                   <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/company/xpensease/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-white transition"
@@ -65,7 +65,7 @@ export function Footer(){
                     <IconBrandLinkedin/>
                   </a>
                   <a
-                    href="https://instagram.com/"
+                    href="https://www.instagram.com/xpenseaseapp/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="hover:text-white transition"
