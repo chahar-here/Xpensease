@@ -3,7 +3,6 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { IconBrandInstagram, IconBrandLinkedin, IconBrandX } from "@tabler/icons-react";
-import { Button } from "react-native";
 
 export function Footer(){
     return (
@@ -75,7 +74,7 @@ export function Footer(){
                 </div>
               </div>
               <div>
-                <a className="bg-blue-500 text-white font-bold py-3 px-6 rounded-md shadow-lg hover:bg-blue-600 transition duration-300"
+                <a className=" bg-[#8EDB05] text-white font-bold py-3 px-6 rounded-md shadow-lg hover:bg-[#649603] transition duration-300"
                  href="/contactus"
                  target=""
                  rel="noopener noreferrer">
@@ -83,7 +82,7 @@ export function Footer(){
               </div>
               </div>
             </div>
-            <hr className=""></hr>
+            <hr className=" border-[#8EDB05]"></hr>
             <p className="mt-4 text-sm">Copyright © 2025 by @xpensease | All Rights Reserved.</p>
           </div>
         </footer>
