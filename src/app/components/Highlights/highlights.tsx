@@ -4,7 +4,7 @@ export default function Highlights(){
     return(
         <div className="text-center pt-30">
             <h1 className="text-6xl">How to get your<br />
-            <span className="text-indigo-500">money into shape?</span>
+            <span className="text-[#8EDB05]">money into shape?</span>
             </h1>
             {/* Line */}
             <div className="my-8 h-[1px] w-full bg-gradient-to-r from-transparent via-neutral-300 to-transparent dark:via-neutral-700" />
@@ -14,7 +14,7 @@ export default function Highlights(){
             <div className="flex-1 text-center lg:text-left w-[50%]">
                 <h1 className="text-3xl md:text-4xl font-extrabold text-white leading-tight">
                     Track your cash flow.<br />
-                    <span className="text-indigo-500">Smarter. Simpler.</span>
+                    <span className="text-[#8EDB05]">Smarter. Simpler.</span>
                     </h1>
                 <ul className=" my-1 list-disc pl-5 text-s text-gray-300">
                     <li>Automatically tracks your bank, UPI, and card expenses.</li>
@@ -41,7 +41,7 @@ export default function Highlights(){
             <div className="flex-1 text-center lg:text-left w-[50%]">
                 <h1 className="text-3xl md:text-3xl font-extrabold text-white leading-tight">
                 Understand your financial habits<br />
-                    <span className="text-indigo-500">The First Step to Financial Freedom</span>
+                    <span className="text-[#8EDB05]">The First Step to Financial Freedom</span>
                     </h1>
                 <ul className=" my-1 list-disc pl-5 text-s text-gray-300">
                     <li>Visualize where they spend the most — food, shopping, bills, etc.</li>
@@ -60,7 +60,7 @@ export default function Highlights(){
             <div className="flex-1 text-center lg:text-left w-[50%]">
                 <h1 className="text-3xl md:text-3xl font-extrabold text-white leading-tight">
                 Make your spending stress–free<br />
-                    <span className="text-indigo-500">Let Xpensease Do the Heavy Lifting</span>
+                    <span className="text-[#8EDB05]">Let Xpensease Do the Heavy Lifting</span>
                     </h1>
                 <ul className=" my-1 list-disc pl-5 text-s text-gray-300">
                     <li>Automate expense tracking — no manual entry, no missed transactions.</li>
