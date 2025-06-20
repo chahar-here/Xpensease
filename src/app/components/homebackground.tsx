@@ -9,7 +9,7 @@ export function HomeBackground() {
         <div className="flex-1 text-center lg:text-left">
           <h1 className="text-4xl md:text-5xl font-extrabold text-white leading-tight">
             Track All Your Expenses.<br />
-            <span className="text-indigo-500">Smarter. Simpler.</span>
+            <span className=" text-[#8EDB05]">Smarter. Simpler.</span>
           </h1>
           <p className="mt-6 text-lg text-gray-300 max-w-xl">
           Xpensease is a smart automatic expense tracking app that helps users manage, split, and settle personal and group expenses with ease. From reminders to real-time dashboards, Xpensease simplifies money matters in everyday life.
@@ -30,7 +30,7 @@ export function HomeBackground() {
         {/* Right: Image */}
         <div className="flex-1">
         <video
-        src="/homepage_14Nov24.mp4" autoPlay loop muted playsInline
+        src="/animation2.mp4" autoPlay loop muted playsInline
         className="rounded-xl shadow-lg w-full max-w-[400px] h-auto z-50" />
         </div>
       </div>

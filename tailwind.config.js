@@ -16,6 +16,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        XpenseaseColorCode: "#8EDB05",
         current: "currentColor",
         transparent: "transparent",
         stroke: "#EEEEEE",

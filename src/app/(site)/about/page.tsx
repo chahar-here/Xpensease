@@ -9,7 +9,7 @@ const About = () => {
       {/* <!-- ===== About Start ===== --> */}
       <section className="overflow-hidden text-center">
         <h1 className="font-medium text-4xl uppercase dark:text-white mb-16">
-                How Xpensease Was <span className="text-indigo-500">Born?</span></h1>
+                How Xpensease Was <span className="text-[#8EDB05]">Born?</span></h1>
         <div className="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
           <div className="flex items-center gap-8 lg:gap-32.5">
             <motion.div
@@ -64,7 +64,7 @@ const About = () => {
             >
               <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
               I'm
-              <span className="text-indigo-500"> Yash Khandelwal</span>, CEO and Founder of Xpensease.
+              <span className="text-[#8EDB05]"> Yash Khandelwal</span>, CEO and Founder of Xpensease.
               </h2>
               <p>
               The idea for Xpensease sparked on February 11th, while I was traveling alone by train — just a day after my 24th birthday.

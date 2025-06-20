@@ -74,7 +74,7 @@ export function Footer(){
                 </div>
               </div>
               <div>
-                <a className=" bg-[#8EDB05] text-white font-bold py-3 px-6 rounded-md shadow-lg hover:bg-[#649603] transition duration-300"
+                <a className=" bg-[#8EDB05] text-black font-bold py-3 px-6 rounded-md shadow-lg hover:bg-[#649603] transition duration-300"
                  href="/contactus"
                  target=""
                  rel="noopener noreferrer">

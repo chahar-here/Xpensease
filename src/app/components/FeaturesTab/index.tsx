@@ -58,7 +58,7 @@ const FeaturesTab = () => {
               onClick={() => setCurrentTab(tab.id)}
               className={`relative flex w-full items-center gap-4 border-b border-stroke px-6 py-2 text-left last:border-0 dark:border-strokedark md:w-auto md:border-0 xl:px-13.5 xl:py-5 ${
                 currentTab === tab.id
-                  ? "before:absolute before:bottom-0 before:left-0 before:h-1 before:w-full before:rounded-tl-[4px] before:rounded-tr-[4px] before:bg-[#006BFF]"
+                  ? "before:absolute before:bottom-0 before:left-0 before:h-1 before:w-full before:rounded-tl-[4px] before:rounded-tr-[4px] before:bg-[#8EDB05]"
                   : ""
               }`}
             >
