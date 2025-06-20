@@ -5,7 +5,10 @@ This is a Xpeasease made with next.js to showcase all the featues of Our app, Xp
 ```bash
 npm run dev
 ```
-``` To Create a build:
+
+## To Create a build:
+
+``` 
 npm run build
 ```
 
