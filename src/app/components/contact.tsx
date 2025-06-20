@@ -11,6 +11,7 @@ export function Contact() {
   const[message, setMessage] = useState('');
   const [error, setError] = useState<string[]>([]);
   const [success, setSuccess] = useState(false);
+  // Old handleSubmit function using mongoDB
   // const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   //   e.preventDefault();
   //   console.log("Full Name :", fullName);
@@ -37,6 +38,7 @@ export function Contact() {
   //     setMessage("");
   //   }
   // };
+  // New handleSubmit function using Firebase Firestore
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
   e.preventDefault();
   setSuccess(false);
