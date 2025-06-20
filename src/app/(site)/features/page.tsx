@@ -199,7 +199,7 @@ const Features = () => {
               className="animate_right relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2"
             >
               <Image
-                src="/features/split.jpg"
+                src="/features/Split.jpg"
                 alt="About"
                 className="hidden dark:block"
                 fill
@@ -397,7 +397,7 @@ const Features = () => {
               className="animate_right relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2"
             >
               <Image
-                src="/features/split.jpg"
+                src="/features/Split.jpg"
                 alt="About"
                 className="hidden dark:block"
                 fill
@@ -595,7 +595,7 @@ const Features = () => {
               className="animate_right relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2"
             >
               <Image
-                src="/features/split.jpg"
+                src="/features/Split.jpg"
                 alt="About"
                 className="hidden dark:block"
                 fill
@@ -793,7 +793,7 @@ const Features = () => {
               className="animate_right relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2"
             >
               <Image
-                src="/features/split.jpg"
+                src="/features/Split.jpg"
                 alt="About"
                 className="hidden dark:block"
                 fill
@@ -991,7 +991,7 @@ const Features = () => {
               className="animate_right relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2"
             >
               <Image
-                src="/features/split.jpg"
+                src="/features/Split.jpg"
                 alt="About"
                 className="hidden dark:block"
                 fill
