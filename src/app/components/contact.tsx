@@ -1,4 +1,6 @@
 "use client";
+import { db } from "../lib/firebase";
+import { collection, addDoc, Timestamp } from "firebase/firestore";
 import React, { useState } from "react";
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
@@ -7,34 +9,56 @@ export function Contact() {
   const[fullName, setFullName] = useState('');
   const[email, setEmail] = useState('');
   const[message, setMessage] = useState('');
-  const [error, setError] = useState([]);
+  const [error, setError] = useState<string[]>([]);
   const [success, setSuccess] = useState(false);
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("Full Name :", fullName);
-    console.log("Email :", email);
-    console.log("Message :", message);
-    const res = await fetch('/api/contact', {
-      method: "POST",
-      headers: {
-        "Content-type": "application/json",
-      },
-      body: JSON.stringify({
-        fullName,
-        email,
-        message,
-      }),
-    });
-    const { msg, success } = await res.json();
-    setError(msg);
-    setSuccess(success);
+  // const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
+  //   console.log("Full Name :", fullName);
+  //   console.log("Email :", email);
+  //   console.log("Message :", message);
+  //   const res = await fetch('/api/contact', {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-type": "application/json",
+  //     },
+  //     body: JSON.stringify({
+  //       fullName,
+  //       email,
+  //       message,
+  //     }),
+  //   });
+  //   const { msg, success } = await res.json();
+  //   setError(msg);
+  //   setSuccess(success);
 
-    if (success) {
-      setFullName("");
-      setEmail("");
-      setMessage("");
-    }
-  };
+  //   if (success) {
+  //     setFullName("");
+  //     setEmail("");
+  //     setMessage("");
+  //   }
+  // };
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  setSuccess(false);
+  setError([]);
+
+  try {
+    await addDoc(collection(db, "contacts"), {
+      fullName,
+      email,
+      message,
+      createdAt: Timestamp.now(),
+    });
+
+    setSuccess(true);
+    setFullName("");
+    setEmail("");
+    setMessage("");
+  } catch (err) {
+    console.error("Firebase error:", err);
+    setError(["Something went wrong. Please try again."]);
+  }
+};
   return (
     <div className="shadow-input mx-auto w-full max-w-md rounded-none bg-white p-4 md:rounded-2xl md:p-8 dark:bg-black">
       {/* Headings */}
@@ -71,6 +95,17 @@ export function Contact() {
           Contact Us &rarr;
           <BottomGradient />
         </button>
+        {success && (
+  <p className="text-green-500 text-center mt-4">Message sent successfully!</p>
+)}
+
+{error.length > 0 && (
+  <ul className="text-red-500 text-center mt-4">
+    {error.map((err, i) => (
+      <li key={i}>{err}</li>
+    ))}
+  </ul>
+)}
 
         <div className="my-8 h-[1px] w-full bg-gradient-to-r from-transparent via-neutral-300 to-transparent dark:via-neutral-700" />
       </form>
