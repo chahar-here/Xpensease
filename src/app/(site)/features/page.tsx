@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Features = () => {
   return (
-    <div className="p-40">
+    <div className="mt-20 mb-10">
       {/* <!-- ===== Feature One Starts ===== --> */}
       <section className="overflow-hidden pb-20 lg:pb-25 xl:pb-30">
         <div className="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
