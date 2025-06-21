@@ -16,16 +16,16 @@ export default function Highlights(){
                     Track your cash flow.<br />
                     <span className="text-[#8EDB05]">Smarter. Simpler.</span>
                     </h1>
-                <ul className=" my-1 list-disc pl-5 text-s text-gray-300">
-                    <li>Automatically tracks your bank, UPI, and card expenses.</li>
-                    <li>Helps you spot and cut unnecessary spending with smart categorization.</li>
-                    <li>Keeps you within budget with alerts and spending summaries.</li>
-                    <li>Manages splits with friends and family to avoid confusion or delays.</li>
-                    <li>Sends reminders for pending dues and lets you log even cash transactions.</li>
+                <ul className=" my-1 lg:list-disc pl-5 text-s text-gray-300 items-center">
+                    <li><span className="lg:hidden">1.</span> Automatically tracks your bank, UPI, and card expenses.</li>
+                    <li><span className="lg:hidden">2.</span> Helps you spot and cut unnecessary spending with smart categorization.</li>
+                    <li><span className="lg:hidden">3.</span> Keeps you within budget with alerts and spending summaries.</li>
+                    <li><span className="lg:hidden">4.</span> Manages splits with friends and family to avoid confusion or delays.</li>
+                    <li><span className="lg:hidden">5.</span> Sends reminders for pending dues and lets you log even cash transactions.</li>
                 </ul>
             </div>
             {/* Right Cards */}
-            <div className="w-[50%]">
+            <div className="w-[50%] hidden lg:block">
                 <CardsStack/>
             </div>
             </div>
@@ -34,7 +34,7 @@ export default function Highlights(){
             {/* Second Section */}
             <div className=" h-[30rem] flex w-full lg:px-30 justify-center items-center gap-2">
                 {/* Right Cards */}
-            <div className="w-[50%]">
+            <div className="w-[50%] hidden lg:block">
                 <CardsStack/>
             </div>
             {/* Left Text */}
@@ -43,12 +43,12 @@ export default function Highlights(){
                 Understand your financial habits<br />
                     <span className="text-[#8EDB05]">The First Step to Financial Freedom</span>
                     </h1>
-                <ul className=" my-1 list-disc pl-5 text-s text-gray-300">
-                    <li>Visualize where they spend the most — food, shopping, bills, etc.</li>
-                    <li>Get categorized summaries that show frequent and unnecessary expenses.</li>
-                    <li>Track monthly trends to compare spending over weeks or months.</li>
-                    <li>Use budgets to identify overspending and stay in control.</li>
-                    <li>Review dashboards for both digital and cash expenses to get the full picture.</li>
+                <ul className=" my-1 lg:list-disc pl-5 text-s text-gray-300">
+                    <li><span className="lg:hidden">1.</span> Visualize where they spend the most — food, shopping, bills, etc.</li>
+                    <li><span className="lg:hidden">2.</span> Get categorized summaries that show frequent and unnecessary expenses.</li>
+                    <li><span className="lg:hidden">3.</span> Track monthly trends to compare spending over weeks or months.</li>
+                    <li><span className="lg:hidden">4.</span> Use budgets to identify overspending and stay in control.</li>
+                    <li><span className="lg:hidden">5.</span> Review dashboards for both digital and cash expenses to get the full picture.</li>
                 </ul>
             </div>
             </div>
@@ -62,16 +62,16 @@ export default function Highlights(){
                 Make your spending stress–free<br />
                     <span className="text-[#8EDB05]">Let Xpensease Do the Heavy Lifting</span>
                     </h1>
-                <ul className=" my-1 list-disc pl-5 text-s text-gray-300">
-                    <li>Automate expense tracking — no manual entry, no missed transactions.</li>
-                    <li>Set reminders for dues and repayments through PayAlert.</li>
-                    <li>Split expenses effortlessly with friends and family, no awkward conversations.</li>
-                    <li>Track budgets and avoid surprise overspending.</li>
-                    <li>Monitor cash flow with real-time dashboards and reports.</li>
+                <ul className=" my-1 lg:list-disc pl-5 text-s text-gray-300">
+                    <li><span className="lg:hidden">1.</span> Automate expense tracking — no manual entry, no missed transactions.</li>
+                    <li><span className="lg:hidden">2.</span> Set reminders for dues and repayments through PayAlert.</li>
+                    <li><span className="lg:hidden">3.</span> Split expenses effortlessly with friends and family, no awkward conversations.</li>
+                    <li><span className="lg:hidden">4.</span> Track budgets and avoid surprise overspending.</li>
+                    <li><span className="lg:hidden">5.</span> Monitor cash flow with real-time dashboards and reports.</li>
                 </ul>
             </div>
             {/* Right Cards */}
-            <div className="w-[50%]">
+            <div className="w-[50%] hidden lg:block">
                 <CardsStack/>
             </div>
             </div>
