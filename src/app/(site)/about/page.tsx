@@ -5,13 +5,13 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="p-40">
+    <div className="mt-24 mb-10">
       {/* <!-- ===== About Start ===== --> */}
       <section className="overflow-hidden text-center">
         <h1 className="font-medium text-4xl uppercase dark:text-white mb-16">
                 How Xpensease Was <span className="text-[#8EDB05]">Born?</span></h1>
         <div className="mx-auto max-w-c-1235 px-4 md:px-8 xl:px-0">
-          <div className="flex items-center gap-8 lg:gap-32.5">
+          <div className="md:flex items-center gap-8">
             <motion.div
               variants={{
                 hidden: {
@@ -28,18 +28,11 @@ const About = () => {
               whileInView="visible"
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
-              className="animate_left relative mx-auto hidden aspect-[588/526.5] md:block md:w-1/2"
+              className=" hidden animate_left relative mx-auto aspect-[588/526.5] lg:block lg:w-1/2"
             >
-              <Image
-                src="/about/about-light-01.png"
-                alt="About"
-                className="dark:hidden"
-                fill
-              />
               <Image
                 src="/about/about-dark-01.png"
                 alt="About"
-                className="hidden dark:block"
                 fill
               />
             </motion.div>
@@ -60,7 +53,7 @@ const About = () => {
               whileInView="visible"
               transition={{ duration: 0.5, delay: 0.1 }}
               viewport={{ once: true }}
-              className="animate_right md:w-1/2"
+              className="animate_right w-full lg:w-1/2"
             >
               <h2 className="relative mb-6 text-3xl font-bold text-black dark:text-white xl:text-hero">
               I'm
